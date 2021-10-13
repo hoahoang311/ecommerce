@@ -1,0 +1,103 @@
+.category-page .category-name {
+  font-size: 42px;
+  text-transform: capitalize;
+  padding-bottom: 90px;
+}
+
+.category-page .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.category-page .product-list .product {
+  position: relative;
+  height: 444px;
+  width: 386px;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+  color: black;
+  margin-right: 38px;
+  cursor: pointer;
+}
+
+.category-page .product-list .product .product-img {
+  resize: none;
+  padding: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 330px;
+  z-index: -1000;
+}
+
+.category-page .product-list .product .product-img-instock {
+  opacity: 1;
+}
+
+.category-page .product-list .product .product-img-out-of-stock {
+  opacity: 0.5;
+}
+
+.category-page .product-list .product .out-of-stock {
+  position: absolute;
+  font-weight: '600';
+  left: 128px;
+  top: 35%;
+  color: #8d8f9a;
+}
+
+.category-page .product-list .product .cart-action {
+  position: absolute;
+  bottom: 60px;
+  right: 31px;
+  display: none;
+  z-index: 999;
+}
+
+.category-page .product-list .product:hover .cart-action {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 999;
+  display: inline;
+}
+
+.category-page .product-list .product .product-details {
+  padding: 16px;
+  padding-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category-page .product-list .product .product-details .price {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.category-page .product-list .product-out-of-stock:hover .cart-action {
+  display: none;
+}
+
+.category-page .product-list .product-selected {
+  -webkit-box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+          box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+/*# sourceMappingURL=CategoryPage.css.map */

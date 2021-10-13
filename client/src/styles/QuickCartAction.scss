@@ -1,0 +1,128 @@
+.quick-cart-action {
+  cursor: default !important;
+  .wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .close-button {
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+
+    .product-brand {
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .product-name {
+      padding-bottom: 10px;
+    }
+
+    .product-attribute {
+      padding-bottom: 10px;
+      .title {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .options {
+        display: flex;
+        margin-top: 10px;
+        .swatch {
+          height: 35px;
+          width: 50px;
+          cursor: pointer;
+        }
+
+        .swatch-selected {
+          border: 1px solid black;
+          padding: 5px;
+        }
+
+        .swatch-white {
+          box-shadow: 0px 1px 5px rgba(57, 55, 72, 0.22);
+        }
+
+        .option {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 16px;
+          line-height: 18px;
+          text-transform: uppercase;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          padding-left: 23px;
+          padding-right: 23px;
+          border: 1px solid black;
+          cursor: pointer;
+        }
+
+        .option-selected {
+          background-color: black;
+          color: white;
+        }
+
+        .option-unselected {
+          background-color: white;
+          color: black;
+        }
+
+        .option-short-list {
+          margin-right: 10px;
+        }
+      }
+
+      .options-long-list {
+        justify-content: space-between;
+      }
+
+      .options-short-list {
+        justify-content: flex-start;
+      }
+    }
+
+    .product-price {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .cart-quick-action {
+      position: absolute;
+      width: 346px;
+      bottom: 20px;
+      flex-wrap: wrap;
+      .add-to-cart {
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span {
+          font-weight: 'bold';
+          font-size: 16px;
+          font-family: 'Raleway', sans-serif;
+          color: white;
+        }
+      }
+
+      .instock {
+        background: #5ece7b;
+      }
+
+      .error-message {
+        font-weight: bold;
+        color: rgb(245, 94, 94);
+        width: 100%;
+      }
+    }
+  }
+}

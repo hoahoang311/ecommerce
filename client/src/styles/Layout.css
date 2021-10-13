@@ -1,0 +1,176 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.display-dropdown {
+  overflow-y: clip;
+}
+
+.no-display {
+  overflow-y: scroll;
+}
+
+.header {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 80px;
+  min-height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.header .navbar .navItem {
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.header .navbar .active-link {
+  border-bottom: solid 1px #5ece7b;
+  color: #5ece7b;
+  font-weight: 600;
+}
+
+.header .shopLogo {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  cursor: pointer;
+}
+
+.header .headerAction {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .headerAction .currency-sign {
+  cursor: pointer;
+}
+
+.header .headerAction .currency-sign img {
+  margin-left: 10px;
+}
+
+.header .headerAction .cart-action {
+  padding-left: 22px;
+  cursor: pointer;
+}
+
+.header .headerAction .item-in-cart {
+  position: absolute;
+  background-color: black;
+  width: 23px;
+  height: 23px;
+  right: -12px;
+  top: -12px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.header .headerAction .currency-selection {
+  z-index: 1000;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 40px;
+  left: -20px;
+  width: 114px;
+  -webkit-box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+          box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+.header .headerAction .currency-selection .currency {
+  width: 100%;
+  cursor: pointer;
+}
+
+.header .headerAction .currency-selection .currency:hover {
+  background-color: #ececec;
+}
+
+.header .headerAction .currency-selection .currency .currency-symbol {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .headerAction .cart-dropdown {
+  background-color: white;
+  position: absolute;
+  width: 325px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  top: 53px;
+  right: -20px;
+  z-index: 101;
+}
+
+.header .headerAction .back-drop {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: grey;
+  opacity: 0.3;
+  z-index: 100;
+}
+
+.main {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
+}
+
+.main .not-found {
+  font-size: 30px;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=Layout.css.map */

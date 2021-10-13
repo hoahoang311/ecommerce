@@ -1,0 +1,12 @@
+module.exports = {
+  presets: ['@babel/preset-env'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./'],
+        extensions: ['.js', '.json'],
+      },
+    ],
+  ],
+}
